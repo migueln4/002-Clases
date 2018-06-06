@@ -18,7 +18,7 @@ public class Coche {
         System.out.print("¡Acelerand");
         for(int i=0;i<potencia;i+=10) {
             System.out.print("o");
-        }//asdfasdfasdf
+        }
         System.out.println("!");
     }
 
