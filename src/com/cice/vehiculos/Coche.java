@@ -15,7 +15,11 @@ public class Coche {
     }
 
     public void acelerar() {
-        System.out.println("¡Acelerandooooooo!");
+        System.out.print("¡Acelerand");
+        for(int i=0;i<potencia;i+=10) {
+            System.out.print("o");
+        }
+        System.out.println("!");
     }
 
     public void frenar() {
@@ -27,4 +31,16 @@ public class Coche {
         System.out.println("[MOTOR]: Parado.");
     }
 
+    /*
+    Si se hace así, cuando alguien intente meter una potencia negativa, así se va a quedar. Eso no lo estamos contemplando.
+
+    public void setPotencia(int potenciaDada) {
+        potencia = potenciaDada;
+    }*/
+
+    public void setPotencia(int potenciaDada) {
+        if (potenciaDada > 0) { //No es lo habitual que esto esté aquí porque cuando se setea algo, estamos seguros de que lo que se setea es como realmente se debe hacer.
+            potencia = potenciaDada;
+        }
+    }
 }
