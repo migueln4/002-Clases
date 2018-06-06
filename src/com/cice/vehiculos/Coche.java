@@ -15,11 +15,26 @@ public class Coche {
     }
 
     public void acelerar() {
-        System.out.print("¡Acelerand");
-        for(int i=0;i<potencia;i+=10) {
-            System.out.print("o");
+        int admiraciones = potencia/100;
+        String cadena1 = "";
+        String cadena2 = "";
+        String cadenafinal = "";
+        for(int i=0;i<admiraciones;i++) {
+            cadena1 += "¡";
         }
-        System.out.println("!");
+        cadenafinal = cadena1+"Acelerand";
+        for(int i=0;i<potencia;i+=10) {
+            cadenafinal+="o";
+        }
+        if (admiraciones > 0) {
+            for(int i=0;i<admiraciones;i++) {
+                cadena2 += "!";
+            }
+            cadenafinal += cadena2;
+        } else {
+            cadenafinal += ".";
+        }
+        System.out.println(cadenafinal);
     }
 
     public void frenar() {
