@@ -27,5 +27,9 @@ public class Main {
         coche2.acelerar();
 
         //Solo se diferencian entre sí en que cada uno tiene una potencia diferente.
+
+        Coche coche4 = new Coche();
+        coche4.setPotencia(525);
+        coche4.acelerar();
     }
 }

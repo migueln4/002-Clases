@@ -12,7 +12,9 @@ public class Contador {
         }
     }
     public void setCuenta(int n) {
-        cuenta = n;
+        if (cuenta > 0) {
+            cuenta = n;
+        }
     }
     public int getCuenta() {
         return cuenta;

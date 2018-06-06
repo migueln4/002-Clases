@@ -51,8 +51,7 @@ public class Cuenta {
     }
 
     private boolean esPositivo(double dinero) {
-        boolean result = dinero > 0 ? true : false;
-        return result;
+        return dinero > 0 ? true : false;
     }
 
 }

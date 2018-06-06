@@ -18,7 +18,7 @@ public class Coche {
         int admiraciones = potencia/100;
         String cadena1 = "";
         String cadena2 = "";
-        String cadenafinal = "";
+        String cadenafinal;
         for(int i=0;i<admiraciones;i++) {
             cadena1 += "¡";
         }
