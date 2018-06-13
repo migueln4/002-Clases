@@ -12,7 +12,6 @@ public class Cliente {
             System.out.print("El número debe ser mayor que 0. Por favor, introduce otro: ");
             r = leerDouble();
         }
-/*Quiero meter una forma que controle que todo el rato pregunte por un número mayor que cero. Hasta que no lo haga, que no continúe.*/
         Circulo c = new Circulo(r);
         System.out.println("Elige si quieres los resultados redondeados o no.\n(1) Para redondeo\n(2) Sin redondeo.");
         System.out.println("Estos son los datos de tu círculo:");
