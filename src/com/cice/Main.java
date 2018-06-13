@@ -1,6 +1,7 @@
 package com.cice;
 
 import com.cice.vehiculos.Coche; //Esto lo importa porque no están a la altura.
+import com.cice.fauna.Animal;
 
 public class Main {
 
@@ -31,5 +32,10 @@ public class Main {
         Coche coche4 = new Coche();
         coche4.setPotencia(525);
         coche4.acelerar();
+
+        Animal animal0 = new Animal();
+        Animal animal1 = new Animal("Felino");
+        Animal animal2 = new Animal("Podenco",7);
+        System.out.println("La raza del animal 1  es "+animal1.getRaza());
     }
 }
