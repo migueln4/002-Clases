@@ -36,6 +36,11 @@ public class Main {
         Animal animal0 = new Animal();
         Animal animal1 = new Animal("Felino");
         Animal animal2 = new Animal("Podenco",7);
-        System.out.println("La raza del animal 1  es "+animal1.getRaza());
+        System.out.println(animal0.getRaza());
+        System.out.println("La raza del animal 1 es "+animal1.getRaza());
+        System.out.println("El animal 2 tiene una raza de "+animal2.getRaza()+" y tiene "+animal2.getNumeroPatas()+" patas.");
+        animal0.setRaza("Dragón");
+        animal1.setRaza("Bichete");
+        System.out.println("Ojo, que ahora el animal 0 es un "+animal0.getRaza()+" y el animal 2 ha digievolucionado en "+animal1.getRaza()+".");
     }
 }

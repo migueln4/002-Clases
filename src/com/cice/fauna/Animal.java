@@ -26,8 +26,16 @@ public class Animal {
         return this.raza;
     }
 
+    public Integer getNumeroPatas() {
+        return this.numeroPatas;
+    }
+
     public void setRaza(String raza) {
         this.raza = raza;
+    }
+
+    public void setNumeroPatas(Integer patas) {
+        this.numeroPatas = patas;
     }
 
 

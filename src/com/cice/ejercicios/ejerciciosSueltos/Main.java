@@ -13,7 +13,7 @@ public class Main {
     public static int maxNum(int[] arrayEnteros) {
         int aux = arrayEnteros[0];
         for(int i=1;i<arrayEnteros.length;i++) {
-            System.out.println("Comparo "+aux+" con "+arrayEnteros[i]);
+//            System.out.println("Comparo "+aux+" con "+arrayEnteros[i]);
             if(aux < arrayEnteros[i]) {
                 aux = arrayEnteros[i];
             }
