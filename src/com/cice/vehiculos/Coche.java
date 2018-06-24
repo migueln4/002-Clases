@@ -55,7 +55,10 @@ public class Coche {
 
     public void setPotencia(int potenciaDada) {
         if (potenciaDada > 0) { //No es lo habitual que esto esté aquí porque cuando se setea algo, estamos seguros de que lo que se setea es como realmente se debe hacer.
-            potencia = potenciaDada;
+            this.potencia = potenciaDada;
         }
     }
+
+    public int getPotencia() { return this.potencia;}
+
 }

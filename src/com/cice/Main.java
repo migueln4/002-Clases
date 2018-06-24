@@ -42,5 +42,34 @@ public class Main {
         animal0.setRaza("Dragón");
         animal1.setRaza("Bichete");
         System.out.println("Ojo, que ahora el animal 0 es un "+animal0.getRaza()+" y el animal 2 ha digievolucionado en "+animal1.getRaza()+".");
+
+        System.out.println("---------------EJEMPLOS DE COPIA VALOR Y REFERENCIA VALOR----------------");
+
+        //COPIA VALOR
+        int a = 1;
+        int b = a;
+        a = 2;
+        System.out.println("a = "+a+"\tb = "+b);
+
+        //REFERENCIA VALOR
+        String nombre ="Miguel";
+        String nombre2 = nombre;
+        nombre = "Plastidécor";
+
+        System.out.println("nombre = "+nombre+"\tnombre2 = "+nombre2); //En realidad, aquí se actúa como un copia-valor
+
+        Coche c = new Coche();
+        c.setPotencia(20);
+        Coche c2 = c;
+
+        c.setPotencia(500);
+
+        System.out.println(c.getPotencia());
+        System.out.println(c2.getPotencia());
+
+        System.out.println(c);
+        System.out.println(c2);
+
+
     }
 }
